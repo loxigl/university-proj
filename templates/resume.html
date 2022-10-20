@@ -1,0 +1,64 @@
+{% extends "base_generic.html" %}
+{% block content %}
+    <div class="container d-flex justify-content-center">
+        {% load static %}
+        <img class="d-flex justify-content-center" src="{% static 'media/photo.jpg' %}" width="20%" height="20%"
+             style="padding: 5px">
+        <style>
+            li {
+                list-style-type: none;
+                padding: 7px;
+                font-size: medium;
+                font-family: 'Amatic SC', cursive;;
+            }
+        </style>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <h2>Шрекус</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <ul>
+            <li>Желаемая должность: Junior back-end разработчик</li>
+            <li>Образование: Низшее</li>
+            <li>Опыт работы: Отсутствует</li>
+            <li>Интересы: Болото</li>
+        </ul>
+    </div>
+    <footer class="bg-dark text-center text-white" style="margin-top: 200px">
+        <div class="container p-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'media/phone.png' %}" width="16px" height="16px">
+                    <p style="padding: 5px">Телефон: +7 (123) 456-78-90</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'media/email.png' %}" width="16px" height="16px" >
+                    <p style="padding: 5px">Почта: <a href="mailto: shrekus@gmail.com">shrekus@gmail.com</a></p>
+                </div>
+            </div>
+            <section class="">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Обратная связь</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control"/>
+                                <label class="form-label" for="form5Example21">Email address</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">shreksus.com</a>
+            </div>
+
+        </div>
+    </footer>
+{% endblock %}
