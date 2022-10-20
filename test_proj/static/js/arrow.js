@@ -13,9 +13,21 @@ link1.onmouseover = function () {
     arrow3.hidden = true
     arrow4.hidden = true
 }
+link1.onmouseleave = function () {
+    arrow1.hidden = true
+    arrow2.hidden = true
+    arrow3.hidden = true
+    arrow4.hidden = true
+}
 link2.onmouseover = function () {
     arrow1.hidden = true
     arrow2.hidden = false
+    arrow3.hidden = true
+    arrow4.hidden = true
+}
+link2.onmouseleave = function () {
+    arrow1.hidden = true
+    arrow2.hidden = true
     arrow3.hidden = true
     arrow4.hidden = true
 }
@@ -25,14 +37,19 @@ link3.onmouseover = function () {
     arrow3.hidden = false
     arrow4.hidden = true
 }
+link3.onmouseleave = function () {
+    arrow1.hidden = true
+    arrow2.hidden = true
+    arrow3.hidden = true
+    arrow4.hidden = true
+}
 link4.onmouseover = function () {
     arrow1.hidden = true
     arrow2.hidden = true
     arrow3.hidden = true
     arrow4.hidden = false
 }
-div.onmouseover=function ()
-{
+link4.onmouseleave = function () {
     arrow1.hidden = true
     arrow2.hidden = true
     arrow3.hidden = true
