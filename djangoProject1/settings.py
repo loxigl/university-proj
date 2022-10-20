@@ -78,13 +78,24 @@ WSGI_APPLICATION = 'djangoProject1.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default': {'ENGINE': 'django.db.backends.postgresql',
+                'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
+                'NAME': os.environ.get('POSTGRES_DB', 'postgres'),
+                'USER': os.environ.get('POSTGRES_USER', 'postgres'),
+                'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'dayzliderkrut'),
+                'PORT': os.environ.get('POSTGRES_PORT', '5432'), },
+
+    'remote': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': os.environ.get('POSTGRES_HOST'),
-        'NAME': os.environ.get('POSTGRES_DB', 'db.sqlite3'),
-        'USER': os.environ.get('POSTGRES_USER', ),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', ),
-        'PORT': os.environ.get('POSTGRES_PORT', ),
+        'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
+        'NAME': os.environ.get('POSTGRES_DB', 'dbname'),
+        'USER': os.environ.get('POSTGRES_USER', 'user'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'password'),
+        'PORT': os.environ.get('POSTGRES_PORT', '5432'),
+    },
+    'not_remote': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3'
     }
 }
 
