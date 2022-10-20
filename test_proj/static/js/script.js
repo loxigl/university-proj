@@ -1,7 +1,6 @@
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
 // async function demo() {
     let btn1=document.getElementById('btn1');
     let btn2=document.getElementById('btn2');

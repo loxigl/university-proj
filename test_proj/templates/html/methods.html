@@ -1,0 +1,41 @@
+{% extends "html/base_generic.html" %}
+
+
+{% block content %}
+    {% load static %}
+    <ul>
+        <li class="d-flex justify-content-center">
+            <h2>Первое задание</h2>
+        </li>
+        <li>
+            <div class="d-flex align-content-between">
+                <div class="container d-flex justify-content-center" style="padding: 20px;">
+                    <img src="{%  static 'media/judy.jpg'%}" height="300px" id="img1">
+                </div>
+                <div class="container d-flex justify-content-center" style="padding: 20px;">
+                    <img src="{% static 'media/Takemura.jpg' %}" height="300px" id="img2">
+                </div>
+                <div class="container d-flex justify-content-center" style="padding: 20px;">
+                    <img src="{% static 'media/panam.jpeg' %}" height="300px" id="img3">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="container d-flex justify-content-center" style="padding: 20px;">
+                <img height="300px" id="img4" hidden>
+            </div>
+        </li>
+
+        <li class="d-flex justify-content-center">
+            <h2>Второе задание</h2>
+        </li>
+        <li>
+            <div class="container d-flex justify-content-center" style="padding: 20px;">
+                <img src="{% static 'media/judy.jpg' %}" height="300px" id="img5" style="transition: 300ms">
+            </div>
+        </li>
+    </ul>
+
+
+    <script src="{% static 'js/methods.js' %}"></script>
+{% endblock %}

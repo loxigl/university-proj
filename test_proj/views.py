@@ -15,3 +15,10 @@ def resume(request):
 
 def branching(request):
     return render(request, 'html/branching.html')
+
+
+def methods(request):
+    return render(request, 'html/methods.html')
+
+def feedback(request):
+    return render(request, 'html/feedback.html')
