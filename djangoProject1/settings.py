@@ -26,7 +26,7 @@ DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'bruh-momento-nomero-uno.herokuapp.com'
+    'bruh-momento-nomero-uno.herokuapp.com',
 ]
 
 # Application definition
