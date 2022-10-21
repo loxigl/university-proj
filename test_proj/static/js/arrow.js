@@ -55,4 +55,3 @@ link4.onmouseleave = function () {
     arrow3.hidden = true
     arrow4.hidden = true
 }
-alert("bruh")
