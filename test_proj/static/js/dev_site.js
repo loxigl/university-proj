@@ -5,11 +5,20 @@ resume = document.getElementById('resume')
 
 btn1.onclick = function () {
     tutor.hidden = true
+    tutor.style.opacity = '0'
     resume.hidden = false
+    setTimeout(() => {
+        resume.style.opacity = '1';
+    }, 1)
 }
 btn2.onclick = function () {
-    tutor.hidden = false
     resume.hidden = true
+    resume.style.opacity = '0'
+    tutor.hidden = false
+    setTimeout(() => {
+        tutor.style.opacity = '1'
+    }, 1)
+
 }
 select = document.getElementById('select')
 count = document.getElementById('count')
@@ -21,8 +30,8 @@ btn3.onclick = function () {
     edu = document.querySelector('input[name="edu"]:checked').value
     let price = +select.value;
     let days = +count.value
-    let result=price*days*edu
-    res.textContent ='Стоймость обучения: ' +result+' руб.';
+    let result = price * days * edu
+    res.textContent = 'Стоймость обучения: ' + result + ' руб.';
 }
 
 //) * parseInt(count.value) * parseInt(edu.value)
