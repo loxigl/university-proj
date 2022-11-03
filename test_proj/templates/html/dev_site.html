@@ -1,11 +1,6 @@
 {% extends "html/base_generic.html" %}
 {% block title %}<title>Сайт разработчика</title>{% endblock %}
 {% block content %}
-    <style>
-        div {
-            transition: 800ms
-        }
-    </style>
     <div class="container d-flex flex-column align-items-center">
         <h2 style="margin-bottom: 30px" id="resume_btn">Резюме</h2>
         <h2 id="tutor_btn">Репетитор</h2>
@@ -16,7 +11,7 @@
 
 
     <div class="container d-flex flex-column align-items-center ">
-        <div style="opacity: 0" hidden id="resume">
+        <div style="opacity: 0 ;transition: 800ms" hidden id="resume">
             <div class="container d-flex justify-content-center">
                 {% load static %}
                 <img class="d-flex justify-content-center" src="{% static 'media/photo.jpg' %}" width="20%" height="20%"
@@ -35,7 +30,7 @@
             </div>
         </div>
 
-        <div style="opacity: 0" hidden id="tutor">
+        <div style="opacity: 0; transition: 800ms" hidden id="tutor">
             <div class="container d-flex flex-column align-items-center">
                 <select name="bruh" id="select" style="margin: 20px">
                     <option value="1000" selected>HTML</option>
