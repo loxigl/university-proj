@@ -27,3 +27,5 @@ def card(request):
     return render(request, 'html/card.html')
 
 
+def dev_site(request):
+    return render(request,'html/dev_site.html')

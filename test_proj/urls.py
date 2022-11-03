@@ -12,6 +12,7 @@ urlpatterns = [
     path('feedback/', views.feedback, name='feedback'),
     path('card/', views.card, name='card'),
     path('switches/', include('switches.urls')),
+    path('dev/', views.dev_site, name='dev_site')
 
 ]
 if settings.DEBUG:
