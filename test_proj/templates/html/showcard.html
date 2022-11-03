@@ -1,0 +1,11 @@
+{% extends "html/base_generic.html" %}
+{% load static %}
+{% block title %} <title>Карточка</title> {% endblock %}
+{% block content %}
+    <div class="card container">
+        <h4><b id="name">{{ person.name }}</b></h4>
+        <p id="age">{{ person.age }}</p>
+        <p id="maritalstatus">{{ person.maritalstatus }}</p>
+    </div>
+
+{% endblock %}

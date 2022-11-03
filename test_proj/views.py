@@ -1,12 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
-from test_proj.models import Flat
+from django.views import View
 
 
 def index(request):
-    num_flat = Flat.objects.all().count()
-    return render(request, 'html/index.html', context={'num_flat': num_flat})
+    return render(request, 'html/index.html')
 
 
 def resume(request):
@@ -20,5 +18,12 @@ def branching(request):
 def methods(request):
     return render(request, 'html/methods.html')
 
+
 def feedback(request):
     return render(request, 'html/feedback.html')
+
+
+def card(request):
+    return render(request, 'html/card.html')
+
+

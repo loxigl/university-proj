@@ -1,0 +1,53 @@
+{% extends "html/base_generic.html" %}
+{% load static %}
+{% block title %} <title>Переключатели</title> {% endblock %}
+{% block content %}
+    <div class="container">
+        <hr id="hr">
+        <style> hr {
+            height: 130px;
+            width: 200px;
+            border-width: 0;
+            color: black;
+            background-color: black;
+        }</style>
+    </div>
+    <div class="container mt-3 mb-3">
+        <button class="button" id="size+">Изменить height на +10px</button>
+        <button class="button" id="size-">Изменить height на -10px</button>
+        <button class="button" id="width+">Изменить width на +10px</button>
+        <button class="button" id="width-">Изменить width на -10px</button>
+        <button class="button" id="right">Сдвинуть вправо на 10px</button>
+        <button class="button" id="left">Сдвинуть влево на 10px</button>
+
+        <script src="{% static 'js/switches.js' %}"></script>
+    </div>
+    <div class="container">
+        <form class="form" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <div class="container mt-2">
+                <button class="button" type="submit">Сохранить</button>
+            </div>
+        </form>
+    </div>
+
+    {% if persons.0 %}
+    <form method="get">
+    <div class="container" style="margin-top: 30px">
+        <select class="selector" name="id" id="selector">
+            {% for i in persons %}
+                <option value="{{ i.id }}">{{ i.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="container">
+        <button class="button" type="submit" formaction="{% url 'showcard' %}">Показать карту</button>
+        <button class="button" type="submit" style="background: red" formaction="{% url 'delete' %}">Удалить карту</button>
+    </div>
+
+    </form>
+    {% endif %}
+
+
+{% endblock %}

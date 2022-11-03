@@ -1,0 +1,67 @@
+{% extends "html/base_generic.html" %}
+ {% block title %}<title>Карточка</title>{% endblock %}
+
+{% block content %} {% load static %}
+<main>
+    <style> main{
+        background-image: url("https://wallpaper.dog/large/17141433.jpg");
+    }</style>
+
+    <ul>
+        <li class="d-flex justify-content-center">
+            <h2>Первое задание</h2>
+        </li>
+        <li class="d-flex justify-content-center">
+            <div class="d-flex align-content-center">
+                <div class=" d-flex justify-content-center" style="padding: 20px;">
+                    <img src="{%  static 'media/judy.jpg'%}" height="60px" id="img1">
+                </div>
+                <div class=" d-flex justify-content-center" style="padding: 20px;">
+                    <img src="{% static 'media/Takemura.jpg' %}" height="60px" id="img2">
+                </div>
+                <div class=" d-flex justify-content-center" style="padding: 20px;">
+                    <img src="{% static 'media/panam.jpeg' %}" height="60px" id="img3">
+                </div>
+
+            </div>
+            <div class="d-flex align-content-center">
+                <div class=" d-flex justify-content-center" style="padding: 20px;">
+                    <img src="{%  static 'media/judy.jpg'%}" height="60px" id="img1">
+                </div>
+                <div class=" d-flex justify-content-center" style="padding: 20px;">
+                    <img src="{% static 'media/Takemura.jpg' %}" height="60px" id="img2">
+                </div>
+                <div class=" d-flex justify-content-center" style="padding: 20px;">
+                    <img src="{% static 'media/panam.jpeg' %}" height="60px" id="img3">
+                </div>
+
+            </div>
+        </li>
+        <li>
+            <div class="container d-flex justify-content-center" style="padding: 20px;">
+                <img height="100px" id="img4" hidden>
+            </div>
+        </li>
+
+        <li class="d-flex justify-content-center">
+            <h2>Второе задание</h2>
+        </li>
+        <li>
+            <div class="container d-flex justify-content-center" style="padding: 20px;">
+                <img src="{% static 'media/judy.jpg' %}" height="300px" id="img5" style="transition: 300ms">
+            </div>
+        </li>
+    </ul>
+     <div class="d-flex justify-content-center">
+        <h2>Шрекус</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <ul>
+            <li>Желаемая должность: Junior back-end разработчик</li>
+            <li>Образование: Низшее</li>
+            <li>Опыт работы: Отсутствует</li>
+            <li>Интересы: Болото</li>
+        </ul>
+    </div>
+</main>
+{% endblock %}

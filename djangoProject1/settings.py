@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'test_proj.apps.TestProjConfig',
-
+    'switches.apps.SwitchesConfig',
 ]
 
 MIDDLEWARE = [
@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'djangoProject1.wsgi.application'
 
 DATABASES = {
     'default': {'ENGINE': 'django.db.backends.postgresql',
-                'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
-                'NAME': os.environ.get('POSTGRES_DB', 'postgres'),
-                'USER': os.environ.get('POSTGRES_USER', 'postgres'),
-                'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'dayzliderkrut'),
+                'HOST': os.environ.get('POSTGRES_HOST', 'ec2-54-228-32-29.eu-west-1.compute.amazonaws.com'),
+                'NAME': os.environ.get('POSTGRES_DB', 'dfo6eqca2008mn'),
+                'USER': os.environ.get('POSTGRES_USER', 'ojfogpmsyjthkd'),
+                'PASSWORD': os.environ.get('POSTGRES_PASSWORD', '7a49acbd11fc5cd3029bd96e9fbcd605ed1d889f108d1235a0fd464476164d83'),
                 'PORT': os.environ.get('POSTGRES_PORT', '5432'), },
 
     'remote': {
@@ -120,7 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'RU-ru'
 
 TIME_ZONE = 'UTC'
 

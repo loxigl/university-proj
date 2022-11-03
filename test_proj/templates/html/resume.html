@@ -1,10 +1,12 @@
 {% extends "html/base_generic.html" %}
+ {% block title %}<title>Резюме</title>{% endblock %}
 {% block content %}
-    <div class="container d-flex justify-content-center">
-        {% load static %}
-        <img class="d-flex justify-content-center" src="{% static 'media/photo.jpg' %}" width="20%" height="20%"
-             style="padding: 5px">
-    </div>
+        <div class="container d-flex justify-content-center">
+            {% load static %}
+            <img class="d-flex justify-content-center" src="{% static 'media/photo.jpg' %}" width="20%" height="20%"
+                 style="padding: 5px">
+        </div>
+
 
     <div class="d-flex justify-content-center">
         <h2>Шрекус</h2>
