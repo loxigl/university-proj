@@ -66,7 +66,11 @@
                      style="height: 20px;position: absolute;top: -4px;" id="arrow7" hidden="true">
                 <a href="{% url 'dev_site' %}" class="nav-link px-2 link-dark" id="link7">Cайт разработчика</a>
             </li>
-
+             <li class="d-flex justify-content-center" style="position: relative">
+                <img src="{% static 'media/arrow.png' %}"
+                     style="height: 20px;position: absolute;top: -4px;" id="arrow8" hidden="true">
+                <a href="{% url 'lottery' %}" class="nav-link px-2 link-dark" id="link8">Лотерея(Казик)</a>
+            </li>
         </ul>
         <div class="col-md-3 text-end">
             {% comment %} <button id="login_btn" type="button" class="btn btn-outline-primary me-2" ><a href="/login_register/log.php">Вход </a></button>

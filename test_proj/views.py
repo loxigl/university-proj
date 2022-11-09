@@ -1,3 +1,5 @@
+import random
+
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import View
@@ -28,4 +30,8 @@ def card(request):
 
 
 def dev_site(request):
-    return render(request,'html/dev_site.html')
+    return render(request, 'html/dev_site.html')
+
+
+def lottery(request):
+    return render(request, 'html/lottery.html')

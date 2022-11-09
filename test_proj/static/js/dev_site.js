@@ -25,7 +25,6 @@ count = document.getElementById('count')
 let edu = document.getElementsByName('edu')
 btn3 = document.getElementById('submit_btn')
 res = document.getElementById('result')
-
 btn3.onclick = function () {
     edu = document.querySelector('input[name="edu"]:checked').value
     let price = +select.value;
