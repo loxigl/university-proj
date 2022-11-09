@@ -35,15 +35,21 @@ btn1.onclick = function () {
     if (b === c) {
         p1.textContent = "Павезло павезло"
         p1.style.opacity = '1'
+        btn1.disabled = true
         setTimeout(() => {
             p1.style.opacity = '0'
+            btn1.disabled = false
         }, 1000)
+
     } else {
         p1.textContent = "Непавезло непавезло"
         p1.style.opacity = '1'
+        btn1.disabled = true
         setTimeout(() => {
             p1.style.opacity = '0'
+            btn1.disabled = false
         }, 1000)
+
     }
 }
 btn2.onclick = function () {
