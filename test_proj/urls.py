@@ -13,8 +13,8 @@ urlpatterns = [
     path('card/', views.card, name='card'),
     path('switches/', include('switches.urls')),
     path('dev/', views.dev_site, name='dev_site'),
-    path('lottery/', views.lottery, name='lottery')
-
+    path('lottery/', views.lottery, name='lottery'),
+    path('string/', views.string, name='string')
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

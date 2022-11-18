@@ -35,3 +35,7 @@ def dev_site(request):
 
 def lottery(request):
     return render(request, 'html/lottery.html')
+
+
+def string(request):
+    return render(request, 'html/string.html')

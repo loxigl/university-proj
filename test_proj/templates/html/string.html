@@ -1,0 +1,22 @@
+{% extends "html/base_generic.html" %}
+{% load static %}
+{% block title %} <title>Строки</title> {% endblock %}
+{% block content %}
+    <div class="d-flex flex-column align-items-center">
+        <div class="container d-flex justify-content-center m-1">
+            <textarea class="input" id="input1" style="width: 300px" placeholder="Введите текст"></textarea>
+        </div>
+        <button class="m-3" id="btn">Посчитать</button>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="me-5 d-flex justify-content-center">
+                <input type="text" id="input2" placeholder="Слово которое надо заменить" style="width: 300px">
+            </div>
+            <div class="d-flex justify-content-center">
+                <input type="text" id="input3" placeholder="Слово на которое надо заменить" style="width: 300px"></div>
+        </div>
+        <button class="m-3" id="btn1">Поменять</button>
+        <button class="m-3" id="btn2">Сжать</button>
+    </div>
+    <script src="{% static 'js/string.js' %}"></script>
+
+{% endblock %}
