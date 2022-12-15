@@ -39,3 +39,7 @@ def lottery(request):
 
 def string(request):
     return render(request, 'html/string.html')
+
+
+def animations(request):
+    return render(request, 'html/animations.html')

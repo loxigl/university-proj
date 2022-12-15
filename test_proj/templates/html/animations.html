@@ -1,0 +1,15 @@
+{% extends "html/base_generic.html" %}
+
+ {% block title %}<title>Анимашки</title>{% endblock %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/animations.css' %}">
+<div>
+<div class="square" id="square"></div>
+<div class="circle"></div>
+<button class="rectangle" id="rectangle">Нажми на меня</button>
+</div>
+
+<script src="{% static 'js/animations.js' %}"></script>
+
+{% endblock %}
